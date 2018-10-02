@@ -1,0 +1,6 @@
+<label for="fileInput" #fileInputLabel>
+  <button mat-fab (click)="fileInputLabel.click()">
+    <mat-icon role="img" class="material-icons mat-icon" aria-label="file upload">file_upload</mat-icon>
+  </button>
+</label>
+<input id="fileInput" type='file' style="display: none" accept=".json, application/json" (change)="uploadFile($event)">

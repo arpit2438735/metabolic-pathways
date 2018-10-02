@@ -1,3 +1,8 @@
 export const environment = {
-  production: true
+  production: true,
+  escherOptions: {
+    menu: 'zoom',
+    scroll_behavior: 'zoom',
+    enable_tooltips: false
+  }
 };
