@@ -1,3 +1,8 @@
 <mat-grid-list cols="4">
-  <app-metabolic-pathways></app-metabolic-pathways>
+  <mat-grid-tile [colspan]="1" [rowspan]="1" >
+    <app-metabolic-pathways (fileLoaded)="fileLoaded($event)"></app-metabolic-pathways>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="2" [rowspan]="1">
+    <app-escher *ngIf="file" [fileData]="file"></app-escher>
+  </mat-grid-tile>
 </mat-grid-list>
